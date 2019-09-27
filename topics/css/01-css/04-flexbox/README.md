@@ -10,21 +10,14 @@
 
 ***
 
-## O que é o _Flexbox_
+## ¿Qué es Flexbox?
 
-Por muito tempo, as únicas ferramentas disponíveis para a criação de leiautes
-em CSS e posicionar elementos com boa compatibilidade entre browsers eram
-`float` e `position`. Porém, essas ferramentas possuem algumas limitações muito
-frustrantes, especialmente no que diz respeito à responsividade. Algumas
-tarefas que consideramos básicas em um leiaute, como centralização vertical de
-uma div-filha com relação a uma div-mãe, fazer com que divs-filhas ocupem a
-mesma quantidade de espaço e colunas terem o mesmo tamanho independente da
-quantidade de conteúdo interno, eram impossíveis ou muito difíceis de serem
-manejadas com floats ou position, ao menos de forma prática e _flexível_.
+Por mucho tiempo las únicas herramientas disponibles para la creación de _layouts_
+en CSS y posicionar elementos con una buena compatibilidad entre diferentes navegadores era `float` y `position`.
+Sin embargo, estas herramientas tenían algunas limitaciones bastante frustrantes, especialmente cuando teníamos en cuenta lo _responsive_.
+Algunas tareas que consideramos básicas en un _layour_, como centrar de manera vertical un elemento según el contenedor en el que esté, hacer que elementos en fila ocupen la misma cantidad de espacio y que las columnas sean del mismo tamaño independientemente del contenido que tengan dentro, eran imposibles o muy dificiles de lograrse con `float` o `position`, al menos de una forma practica y _flexible_.
 
-A ferramenta Flexbox (de Flexible Box) foi criada para tornar essas tarefas
-mais simples e funcionais: as filhas de um elemento com Flexbox podem se
-posicionar em qualquer direção e pode ter dimensões flexíveis para se adaptar.
+Flexbox (que viene de _Flexible Box_) fue creada para que estas tareas fuesen mucho más simples y funcionales: los hijos de un elemento con Flexbox pueden posicionarse en cualquier dirección y pueden tener dimensiones flexbiles para adaptarse.
 
 ## Elementos
 
