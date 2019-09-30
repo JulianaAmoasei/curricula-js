@@ -21,9 +21,7 @@ Flexbox (que viene de _Flexible Box_) fue creada para que estas tareas fuesen mu
 
 ## Elementos
 
-**Flex container** é o elemento que envolve sua estrutura. Você define que um
-elemento é um Flex Container com a propriedade `display` e valores `flex` ou
-`inline-flex`.
+**Flex container** es el elemento que va a contener una estructura de elementos. Se puede definir utilizando la propiedad `display` con valor `flex` o `inline-flex`.
 
 ```html
   <div class="flex-container">
@@ -39,26 +37,20 @@ elemento é um Flex Container com a propriedade `display` e valores `flex` ou
   }
 ```
 
-**Flex Item** são elementos-filhas do flex container.
 
-**Eixos ou Axes** são as duas direções básicas que existem em um Flex Container:
-_main axis_, que seria o eixo horizontal ou o eixo principal, e _cross axis_
-que seria o eixo vertical.
+**Flex Item** los elementos _hijos_ de un flex container.
 
-## Propriedades para o elemento-mãe
+**Ejes** son las direcciones basicas que existen en un flex container: _main axis_ que sería el eje horizontal o el eje principal y _cross axis_ que es el eje vertical.
+
+## Propriedades para elementos madre
 
 ![container flex](https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg)
 
-Quando utilizamos o _Flexbox_, é muito importante saber quais propriedades são
-declaradas no elemento-mãe (por exemplo, uma `div` que irá conter os elementos
-a serem alinhados) e quais serão declaradas nos elementos-filhas. Abaixo,
-seguem algumas propriedades que devem ser declaradas utilizando o elemento-mãe
-como seletor (para alinhar elementos-filhas):
+Cuando utilizamos _Flexbox_, es muy importante saber que propiedades son declaradas en los elementos madre (por ejemplo, un `div` que alineará a los elementos hijos o _flex items_) y cuales seran declarados en los elementos hijos.
+Abajo estan algunas de las propiedades que deben ser declaradas utilizando un elemento madre como selector (para alinear a sus hijos):
 
-**flex-direction** determina a origem e o término do fluxo dos ítens. Eles
-seguem o vetor estabelecido pelo modo tradicional de escrita: esquerda para
-direita em `row`, cima para baixo em `column`, ou no sentido inverso utilizando
-`-reverse`.
+
+**flex-direction** determina el origen y el fin del flujo de dos items. Siguen el patrón establecido en la escritura occidental: de izquierda hacia derecha en `row`, de arriba hacia abajo en `column`, y para indicar que sea el sentido inverso, podemos utilizar `-reverse`.
 
 ```css
   .flex-container {
@@ -68,8 +60,7 @@ direita em `row`, cima para baixo em `column`, ou no sentido inverso utilizando
 
 ![flex-direction](https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg)
 
-Você pode definir se os elementos serão forçados a ficar em uma mesma linha ou
-se eles irão quebrar em várias linhas com a propriedade **flex-wrap**.
+Podrás definir si los elementos tienen que caber en una misma línea o se iran rompiendo en varias líneas con la propiedad **flex-wrap**.
 
 ```css
   .flex-container {
@@ -79,12 +70,9 @@ se eles irão quebrar em várias linhas com a propriedade **flex-wrap**.
 
 ![flex-wrap](https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg)
 
-A propriedade **flex-flow** é uma propriedade _shorthand_ (uma mesma declaração
-inclui vários valores relacionados a uma mesma propriedade) que inclui
-`flex-direction` e `flex-wrap`. Determina a ordem do fluxo em que os elementos
-aparecerão.
+La propiedad **flex-flow** es un tipo de propiedad _shorthand_ (una sola declaración que incluye varios valores relaciones a una misma propiedad) que incluye `flex-direction` y `flex-wrap`. Determina el orden en el cual apareceran los elementos.
 
-O **justify-content** define o alinhamento das filhas ao longo do eixo principal.
+**justify-content** define la alineación de los hijos en el largo del eje principal.
 
 ```css
   .flex-container {
@@ -94,9 +82,7 @@ O **justify-content** define o alinhamento das filhas ao longo do eixo principal
 
 ![justify-content](https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg)
 
-**align-items** define o comportamento padrão de como _flex items_ são
-alinhados de acordo com o eixo vertical (_cross axis_). De certa forma,
-funciona de forma similar ao `justify-content`, porém no eixo perpendicular.
+**align-items** define el comportamiento predeterminado de como los _flex items_ son alineados de acuerdo al eje vertical (_cross axis_). De esta forma, funciona de una manera similar a `justify-content`, pero en el eje perpendicular.
 
 ```css
   .flex-container {
@@ -106,9 +92,7 @@ funciona de forma similar ao `justify-content`, porém no eixo perpendicular.
 
 ![align-items](https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg)
 
-**align-content** alinha o conteúdo dentro do container quando há espaço extra
-no eixo vertical, similar à forma que `justify-content` alinha ítens
-individuais dentro do eixo principal.
+**align-content** alinea el contenido dentro del contener cuando haya espacio extra en el eje vertical, similar a como `justify-content` alinea los items individuales en el eje principal.
 
 ```css
   .flex-container {
