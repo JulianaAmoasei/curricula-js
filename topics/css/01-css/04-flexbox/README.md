@@ -51,7 +51,6 @@ Se puede definir utilizando la propiedad `display` con valor `flex` o
   }
 ```
 
-
 **Flex Item** los elementos _hijos_ de un flex container.
 
 **Ejes** son las direcciones basicas que existen en un flex container: _main
@@ -68,7 +67,6 @@ elementos hijos o _flex items_) y cuáles serán declarados en los elementos
 hijos.
 Abajo estan algunas de las propiedades que deben ser declaradas utilizando un
 elemento madre como selector (para alinear a sus hijos):
-
 
 **flex-direction** determina el origen y el fin del flujo de dos items. Siguen
 el patrón establecido en la escritura occidental: de izquierda hacia derecha en
@@ -113,6 +111,7 @@ principal.
 **align-items** define el comportamiento predeterminado de como los _flex items_
 son alineados de acuerdo al eje vertical (_cross axis_). De esta forma, funciona
 de una manera similar a `justify-content`, pero en el eje perpendicular.
+
 ```css
   .flex-container {
     align-items: stretch | flex-start | flex-end | center | baseline;
@@ -133,10 +132,10 @@ individuales en el eje principal.
 
 ![align-content](https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg)
 
-## Propriedades para elementos hijos.
+## Propriedades para elementos hijos
+
 A continuación, veremos las propiedades que pueden ser declaradas teniendo como
 selector a los elementos hijos.
-
 
 ```html
   <div class="flex-container">
@@ -157,7 +156,6 @@ propiedades flex a elementos HTML que no estén directamente relacionados.
 madre deberán tener la propiedad _flex_.
 - Las propiedades `float`, `clear` y `vertical-align` no tienen ningún efecto en
 los _flex items_.
-
 
 La propiedad **order** determina el orden en el cual apareceran los elementos.
 
@@ -185,7 +183,6 @@ este último crecerá para ocupar el doble de tamaño de sus hermanos.
 **align-self** permite un alineamiento predeterminado (definido por
 `align-items`) que sobrescribirá para items individuales.
 
-
 ```css
   .flex-item {
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
@@ -198,7 +195,7 @@ Existen otras propiedades para los hijos como `flex-shrink`, `flex-basis` y el
 shorthand `flex`, puedes investigar más sobre ellos para conocer aún más
 propiedades.
 
-## ¡Practiquemos!
+## Practiquemos
 
 [Flexbox Froggy](https://flexboxfroggy.com/)
 
